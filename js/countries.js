@@ -38,11 +38,13 @@ const displayCountries = countries =>{
 } */
 
 
-const getCountryHTML = country => {
+// option: 2 for object destructuring
+const getCountryHTML = ({name, flags, area}) => {
     return `
         <div class="country">
-            <h2>${country.name.common}</h2>
-            <img src="${country.flags.png}">
+            <h2>${name.common}</h2>
+            <p>Area: ${area}</p>
+            <img src="${flags.png}">
         </div>
     `
 }
