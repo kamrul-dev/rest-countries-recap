@@ -14,7 +14,30 @@ const displayCountries = countries =>{
 
 }
 
+// original
+/* const getCountryHTML = country => {
+    return `
+        <div class="country">
+            <h2>${country.name.common}</h2>
+            <img src="${country.flags.png}">
+        </div>
+    `
+} */
+
 // create html element using function and template string
+// option : 1 for object destructiuring
+/* const getCountryHTML = country => {
+    // option: 1
+    const {name, flags} = country;
+    return `
+        <div class="country">
+            <h2>${name.common}</h2>
+            <img src="${flags.png}">
+        </div>
+    `
+} */
+
+
 const getCountryHTML = country => {
     return `
         <div class="country">
