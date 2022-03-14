@@ -13,6 +13,8 @@ const displayCountries = countries =>{
     container.innerHTML = countriesHTML.join(' ');
 
 }
+
+// create html element using function and template string
 const getCountryHTML = country => {
     return `
         <div class="country">

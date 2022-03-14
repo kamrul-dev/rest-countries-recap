@@ -1,3 +1,5 @@
+
+/* Styles for rest countries div */
 .countries{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
